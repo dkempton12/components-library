@@ -1,3 +1,5 @@
+import "./WebsiteHero.module.scss";
+
 export default function WebsiteHero() {
   return (
     <div className="hero">
