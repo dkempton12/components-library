@@ -1,0 +1,14 @@
+// mixins
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin header-effect {
+  content: "";
+  display: block;
+  height: 10px;
+  background-color: $gold;
+  width: 100%;
+}

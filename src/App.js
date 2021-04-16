@@ -4,7 +4,7 @@ import WebsiteHero from "./components/WebsiteHero/WebsiteHero";
 function App() {
   return (
     <div className="App">
-      <WebsiteHero />
+      <WebsiteHero bg_color="blue" text_color="white" />
     </div>
   );
 }
