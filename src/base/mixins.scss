@@ -1,3 +1,5 @@
+@use "../theme/colors.scss";
+
 // mixins
 @mixin flex-center {
   display: flex;
@@ -9,6 +11,6 @@
   content: "";
   display: block;
   height: 10px;
-  background-color: $gold;
+  background-color: colors.$gold;
   width: 100%;
 }

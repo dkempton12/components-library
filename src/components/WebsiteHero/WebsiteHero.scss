@@ -1,3 +1,61 @@
+@use "../../theme/colors.scss";
+@use "../../base/mixins.scss";
+
+.bg-white {
+  background-color: colors.$white;
+}
+
+.bg-black {
+  background-color: colors.$black;
+}
+
+.bg-blue {
+  background-color: colors.$blue;
+}
+
+// fonts
+.text-white {
+  color: colors.$white;
+}
+
+.text-black {
+  color: colors.$black;
+}
+
 .hero {
-  background: green;
+  @include mixins.flex-center;
+  min-height: 300px;
+  padding: 60px 30px;
+
+  @media (max-width: 768px) {
+    justify-content: flex-start;
+  }
+}
+
+.main-heading {
+  font-size: 4rem;
+  font-family: Arial;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 3rem;
+  }
+
+  &:before {
+    @include mixins.header-effect;
+    margin-bottom: 30px;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &:after {
+    @include mixins.header-effect;
+    margin-top: 30px;
+
+    @media (max-width: 768px) {
+      width: 40px;
+    }
+  }
 }
