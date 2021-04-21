@@ -1,6 +1,7 @@
 import "./App.css";
 import Container from "./components/Layout/Container/Container";
 import WebsiteHero from "./components/WebsiteHero/WebsiteHero";
+import Form from "./components/Form/Form/Form";
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
           pariatur.
         </p>
+
+        <Form />
       </Container>
     </div>
   );
