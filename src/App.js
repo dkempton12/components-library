@@ -17,7 +17,7 @@ function App() {
           pariatur.
         </p>
 
-        <Form />
+        <Form label="Name:" />
       </Container>
     </div>
   );

@@ -1,10 +1,10 @@
 import React from "react";
 import Input from "../Input/Input";
 
-function Form() {
+function Form({ label }) {
   return (
     <form className="form">
-      <Input />
+      <Input label={label} />
     </form>
   );
 }
