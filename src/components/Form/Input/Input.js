@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Input.scss";
 
 function Input({ label }) {
   const [value, setValue] = useState("");
