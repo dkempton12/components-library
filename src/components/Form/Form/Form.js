@@ -1,12 +1,7 @@
 import React from "react";
-import Input from "../Input/Input";
 
-function Form({ label }) {
-  return (
-    <form className="form">
-      <Input label={label} />
-    </form>
-  );
+function Form() {
+  return <form className="form"></form>;
 }
 
 export default Form;
