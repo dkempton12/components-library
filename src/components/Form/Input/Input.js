@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Field from "../Field/Field";
 import "./Input.scss";
 
 function Input({ label }) {
@@ -10,10 +11,10 @@ function Input({ label }) {
   };
 
   return (
-    <div className="field">
+    <Field>
       <label>{label}</label>
       <input type="text" value={value} onChange={handleInputChange} />
-    </div>
+    </Field>
   );
 }
 
