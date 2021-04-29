@@ -8,7 +8,11 @@ function Signup() {
   return (
     <Form>
       <Field>
-        <Input />
+        <Input label="Name" />
+      </Field>
+
+      <Field>
+        <Input label="Email" />
       </Field>
     </Form>
   );
