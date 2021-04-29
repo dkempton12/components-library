@@ -1,7 +1,8 @@
 import "./App.css";
+
 import Container from "./components/Layout/Container/Container";
 import WebsiteHero from "./components/WebsiteHero/WebsiteHero";
-import Form from "./components/Form/Form/Form";
+import Signup from "./components/Signup/Signup";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
           pariatur.
         </p>
 
-        <Form label="Name:" />
+        <Signup />
       </Container>
     </div>
   );
