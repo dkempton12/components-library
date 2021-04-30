@@ -1,7 +1,7 @@
 import "./App.css";
 
 import Container from "./components/Layout/Container/Container";
-import WebsiteHero from "./components/WebsiteHero/WebsiteHero";
+import WebsiteHero from "./components/UI/WebsiteHero/WebsiteHero";
 import Signup from "./components/Signup/Signup";
 
 function App() {
