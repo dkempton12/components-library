@@ -1,8 +1,18 @@
-# Getting Started with Create React App
+# Custom Component Library that I'm building using Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## About the Project
+
+**Purpose of this project:** to create reusable and configurable components, both stateful and stateless, that can be used in React app and website development projects.
+
+Components are created using React Hooks and ES6 JS, and a combination of **CSS modules** and **Styled Components** for styling.
+
+All components are located in the **src/components** directory.
+
+## Running this Project Locally
+
+Clone the project and cd into the project on your local computer.
 
 In the project directory, you can run:
 
