@@ -3,6 +3,7 @@ import React from "react";
 import Form from "../Form/Form/Form";
 import Field from "../Form/Field/Field";
 import Input from "../Form/Input/Input";
+import Button from "../UI/Button/Button";
 
 function Signup() {
   return (
@@ -14,6 +15,8 @@ function Signup() {
       <Field>
         <Input label="Email" />
       </Field>
+
+      <Button type="submit">Submit</Button>
     </Form>
   );
 }
