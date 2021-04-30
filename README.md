@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 **Purpose of this project:** to create reusable and configurable components, both stateful and stateless, that can be used in React app and website development projects.
 
-Components are created using React Hooks and ES6 JS, and a combination of **CSS modules** and **Styled Components** for styling.
+Components are created using **React Hooks** and **ES6 JS**, and a combination of **CSS modules** and **Styled Components** for styling.
 
 All components are located in the **src/components** directory.
 
