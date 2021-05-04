@@ -1,10 +1,10 @@
 import React from "react";
-import dropdownData from "../DropdownData";
+import DropdownItem from "../DropdownItem/DropdownItem";
 
-function DropdownList() {
+function DropdownList({ data }) {
   return (
     <div>
-      {dropdownData.map(item => (
+      {data.map(item => (
         <DropdownItem key={item.id} />
       ))}
     </div>
