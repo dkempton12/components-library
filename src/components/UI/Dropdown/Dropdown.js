@@ -1,11 +1,11 @@
 import React from "react";
 import DropdownList from "./DropdownList/DropdownList";
 
-import classes from "./Dropdown.module.scss";
+import styles from "./Dropdown.module.scss";
 
 function Dropdown({ data, label }) {
   return (
-    <div className={classes.Dropdown}>
+    <div className={styles.Dropdown}>
       <label>{label}</label>
       <DropdownList data={data} />
     </div>
