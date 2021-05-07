@@ -3,6 +3,8 @@ import "./App.css";
 import Container from "./components/Layout/Container/Container";
 import WebsiteHero from "./components/UI/WebsiteHero/WebsiteHero";
 import Signup from "./components/Signup/Signup";
+import Dropdown from "./components/UI/Dropdown/Dropdown";
+import dropdownData from "./components/UI/Dropdown/dropdownData";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         </p>
 
         <Signup />
+
+        <Dropdown data={dropdownData} label="Select" />
       </Container>
     </div>
   );
