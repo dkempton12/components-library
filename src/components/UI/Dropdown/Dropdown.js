@@ -5,7 +5,7 @@ import styles from "./Dropdown.module.scss";
 
 function Dropdown({ data, label }) {
   return (
-    <div className={styles.Dropdown}>
+    <div className={styles.dropdown}>
       <label>{label}</label>
       <DropdownList data={data} />
     </div>
