@@ -1,13 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import DropdownList from "./DropdownList/DropdownList";
 
 import styles from "./Dropdown.module.scss";
+import dropdownData from "./dropdownData";
 
 function Dropdown({ data, label }) {
+  // dropdown list state
+  const [displayList, setDisplayList] = useState(false);
+
+  // handle list display
+  const handleList = () => {
+    setDisplayList(!displayList);
+  };
+
+  // dropdown list UI
+  let dropdownList;
+  if (displayList) {
+    dropdownList = <DropdownList data={data} />;
+  } else {
+    dropdownList = null;
+  }
+
   return (
     <div className={styles.dropdown}>
       <label>{label}</label>
-      <DropdownList data={data} />
+      <div className={styles.dropdownselector} onClick={handleList}>
+        Select Value
+      </div>
+      {dropdownList}
     </div>
   );
 }
