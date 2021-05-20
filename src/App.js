@@ -22,7 +22,7 @@ function App() {
 
         <Signup />
 
-        <Dropdown data={dropdownData} label="Select" />
+        <Dropdown data={dropdownData} label="Country" />
       </Container>
     </div>
   );
