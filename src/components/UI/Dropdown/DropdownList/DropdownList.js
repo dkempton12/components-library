@@ -7,7 +7,12 @@ function DropdownList({ data }) {
   return (
     <div className={styles.dropdownlist}>
       {data.map(item => (
-        <DropdownItem key={item.id} name={item.name} value={item.value} />
+        <DropdownItem
+          key={item.id}
+          name={item.name}
+          value={item.value}
+          id={item.id}
+        />
       ))}
     </div>
   );
