@@ -9,8 +9,8 @@ function Dropdown({ data, label }) {
   const [displayList, setDisplayList] = useState(false);
 
   // handle list display
-  const handleList = () => {
-    setDisplayList(!displayList);
+  const handleListDisplay = () => {
+    setDisplayList(true);
   };
 
   // dropdown list UI
@@ -24,7 +24,7 @@ function Dropdown({ data, label }) {
   return (
     <div className={styles.dropdown}>
       <label>{label}</label>
-      <div className={styles.dropdownselector} onClick={handleList}>
+      <div className={styles.dropdownselector} onClick={handleListDisplay}>
         Select Value
       </div>
       {dropdownList}
