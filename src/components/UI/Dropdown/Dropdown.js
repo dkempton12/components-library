@@ -13,10 +13,15 @@ function Dropdown({ data, label }) {
     setDisplayList(true);
   };
 
+  // close list display
+  const handleListClose = () => {
+    setDisplayList(false);
+  };
+
   // dropdown list UI
   let dropdownList;
   if (displayList) {
-    dropdownList = <DropdownList data={data} />;
+    dropdownList = <DropdownList data={data} onItemClick={handleListClose} />;
   } else {
     dropdownList = null;
   }
