@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import DropdownList from "./DropdownList/DropdownList";
 
 import styles from "./Dropdown.module.scss";
-import dropdownData from "./dropdownData";
 
 function Dropdown({ data, label }) {
   // dropdown list state
