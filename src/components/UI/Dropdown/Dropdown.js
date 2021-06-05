@@ -4,8 +4,16 @@ import DropdownList from "./DropdownList/DropdownList";
 import styles from "./Dropdown.module.scss";
 
 function Dropdown({ data, label }) {
-  // dropdown list state
+  // dropdown item onchange value
+  const [dropdownValue, setDropdownValue] = useState();
+
+  // dropdown list display state
   const [displayList, setDisplayList] = useState(false);
+
+  // handle change
+  const handleDropdownChange = event => {
+    setDropdownValue(event.target.value);
+  };
 
   // handle list display
   const handleListDisplay = () => {
@@ -21,7 +29,13 @@ function Dropdown({ data, label }) {
   let dropdownList;
 
   if (displayList) {
-    dropdownList = <DropdownList data={data} onItemClick={handleListClose} />;
+    dropdownList = (
+      <DropdownList
+        data={data}
+        onItemChange={handleDropdownChange}
+        onItemClick={handleListClose}
+      />
+    );
   } else {
     dropdownList = null;
   }

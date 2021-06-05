@@ -3,7 +3,7 @@ import DropdownItem from "../DropdownItem/DropdownItem";
 
 import styles from "./DropdownList.module.scss";
 
-function DropdownList({ data, onItemClick }) {
+function DropdownList({ data, onItemChange, onItemClick }) {
   return (
     <ul className={styles.dropdownlist}>
       {data.map(item => (
@@ -12,6 +12,7 @@ function DropdownList({ data, onItemClick }) {
           name={item.name}
           value={item.value}
           id={item.id}
+          itemChanged={onItemChange}
           itemClicked={onItemClick}
         />
       ))}
