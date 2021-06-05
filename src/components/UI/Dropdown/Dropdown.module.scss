@@ -5,8 +5,17 @@
 
 // using button as the select
 .dropdownselector {
+  display: block;
+  width: 100%;
+  padding: 10px 0px;
   border: none;
   background: #fff;
   font-size: inherit;
+  text-align: left;
   cursor: pointer;
+
+  &:focus {
+    // width: 100%;
+    border: 1px solid #000;
+  }
 }
