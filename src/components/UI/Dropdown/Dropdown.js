@@ -32,6 +32,7 @@ function Dropdown({ data, label }) {
     dropdownList = (
       <DropdownList
         data={data}
+        value={dropdownValue}
         onItemChange={handleDropdownChange}
         onItemClick={handleListClose}
       />
