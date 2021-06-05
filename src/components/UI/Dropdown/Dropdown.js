@@ -29,9 +29,9 @@ function Dropdown({ data, label }) {
   return (
     <div className={styles.dropdown}>
       <label>{label}</label>
-      <div className={styles.dropdownselector} onClick={handleListDisplay}>
+      <button className={styles.dropdownselector} onClick={handleListDisplay}>
         Select Value
-      </div>
+      </button>
       {dropdownList}
     </div>
   );
