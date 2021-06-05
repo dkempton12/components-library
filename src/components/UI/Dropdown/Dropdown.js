@@ -20,6 +20,7 @@ function Dropdown({ data, label }) {
 
   // dropdown list UI
   let dropdownList;
+
   if (displayList) {
     dropdownList = <DropdownList data={data} onItemClick={handleListClose} />;
   } else {
