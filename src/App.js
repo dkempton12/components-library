@@ -5,6 +5,7 @@ import WebsiteHero from "./components/UI/WebsiteHero/WebsiteHero";
 import Signup from "./components/Signup/Signup";
 import Dropdown from "./components/UI/Dropdown/Dropdown";
 import dropdownData from "./components/UI/Dropdown/dropdownData";
+import Accordion from "./components/UI/Accordion/Accordion";
 
 function App() {
   return (
@@ -23,6 +24,23 @@ function App() {
         <Signup />
 
         <Dropdown data={dropdownData} label="Country" />
+        <h3>Accordion</h3>
+        <Accordion>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </li>
+          </ul>
+        </Accordion>
       </Container>
     </div>
   );
