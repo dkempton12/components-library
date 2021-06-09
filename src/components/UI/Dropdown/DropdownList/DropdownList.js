@@ -10,7 +10,7 @@ function DropdownList({ data, value, onItemChange, onItemClick }) {
         <DropdownItem
           key={item.id}
           name={item.name}
-          value={item.value}
+          abbrev={item.abbrev}
           itemValue={value}
           id={item.id}
           itemChanged={onItemChange}
