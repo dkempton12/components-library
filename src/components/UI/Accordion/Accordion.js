@@ -16,9 +16,6 @@ function Accordion({ children, title }) {
 
   return (
     <div className={classes.accordion} onClick={accordionToggleHandler}>
-      <div className={classes.accordiontitle}>
-        <h4>{title}</h4>
-      </div>
       {accordionToggleUI}
     </div>
   );
