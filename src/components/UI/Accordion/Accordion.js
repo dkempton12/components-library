@@ -1,23 +1,27 @@
 import React, { useState } from "react";
-import classes from "./Accordion.module.scss";
+import styled from "styled-components";
 
-function Accordion({ children, title }) {
+const AccordionHeading = styled.h3`
+  cursor: pointer;
+`;
+
+function Accordion({ children, accordionHeading }) {
   const [displayAccordion, setDisplayAccordion] = useState(false);
 
   const accordionToggleHandler = () => {
     setDisplayAccordion(!displayAccordion);
   };
 
-  const accordionToggleUI = displayAccordion ? (
-    <div className={classes.accordioncontent}>{children}</div>
-  ) : (
-    <p>This is an accordion</p>
-  );
+  const accordionContent = displayAccordion ? <div>{children}</div> : null;
 
   return (
-    <div className={classes.accordion} onClick={accordionToggleHandler}>
-      {accordionToggleUI}
-    </div>
+    <>
+      <AccordionHeading onClick={accordionToggleHandler}>
+        {accordionHeading}
+      </AccordionHeading>
+
+      <div>{accordionContent}</div>
+    </>
   );
 }
 

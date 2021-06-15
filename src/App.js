@@ -24,8 +24,8 @@ function App() {
         <Signup />
 
         <Dropdown data={dropdownData} label="Country" />
-        <h3>Accordion</h3>
-        <Accordion>
+
+        <Accordion accordionHeading="Learn More">
           <ul>
             <li>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
